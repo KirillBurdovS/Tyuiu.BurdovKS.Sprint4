@@ -32,11 +32,6 @@ class Program
 
         int[] array = new int[size];
 
-        for (int i = 0; i < size; i++)
-        {
-            array[i] = int.Parse(Console.ReadLine());
-
-        }
 
         int product = 1;
 
@@ -48,6 +43,8 @@ class Program
 
             }
         }
+
+
    
   
 
