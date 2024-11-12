@@ -1,0 +1,27 @@
+<Проект Sdk="Microsoft.NET.Sdk">
+
+  <Группа свойств>
+    <ТаргетФреймворк&gt;net8.0>
+    <ImplicitUsings&gt;включить>
+    <Обнуляемый&gt;включить>
+
+    <IsPackable&gt; false>
+    <IsTestProject&gt;истина>
+  </Группа свойств>
+
+  <Группа предметов>
+    <PackageReference Include="coverlet.collector" Версия="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Версия="17.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Версия="3.1.1" />
+    <PackageReference Include="MSTest.TestFramework" Версия="3.1.1" />
+  </Группа предметов>
+
+  <Группа предметов>
+    <ProjectReference Include="..\Tyuiu.BurdovKS.Sprint4.Task6.V23.Lib\Tyuiu.BurdovKS.Sprint4.Task6.V23.Lib.csproj" />
+  </Группа предметов>
+
+  <Группа предметов>
+    <Использование Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </Группа предметов>
+
+</Проект>
