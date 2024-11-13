@@ -28,39 +28,37 @@ class Program
         Console.WriteLine("***************************************************************************");
 
         int n = 4;
-
         int m = 2;
+        int[,] mtrx = new int[n, m];
 
-        string value = "56789012";
-
-        int[,] matrix = new int[n, m];
+        string str = "56789012";
 
 
-        int res = ds.Calculate(n, m, value);
 
+        int index = 0;
+
+        Console.WriteLine("\nМассив:");
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
             {
-                matrix[i, j] = int.Parse(value.Substring(i * m + j, 1));
+                Console.Write($"{str[index]} \t");
+                index++;
 
             }
+            Console.WriteLine();
         }
 
+        Console.WriteLine();
 
-        int count = 0;
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < m; j++)
-            {
-                if (matrix[i, j] % 2 != 0)
-                {
-                    count++;
-                }
+        int res = ds.Calculate(n, m, str);
 
-            }
-        }
-        Console.WriteLine(count);
+        Console.WriteLine("Количество нечетных элементов = " + res);
+        Console.ReadKey();
+
+
+
+
 
 
 
